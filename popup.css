@@ -1,0 +1,95 @@
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 400px;
+  width: 300px;
+  background-color: white;
+} 
+
+#heading{
+  font-size: 25px;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #f92828, #553c9a);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-bottom: 0%;
+}
+
+#two_buttons{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+}
+  
+button {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  text-align: center;
+  border: 2px solid #ff7272;
+  width: auto;
+  margin: 10px auto;
+  padding: 10px 20px;
+  color: white;
+  background-color: #ff7272;
+  display: block;
+  border-radius: 8px;
+}
+
+button:hover {
+  color: #ff7272;
+  background-color: white;
+}
+
+#summary{
+  border-radius: 15px;
+  height:75%;
+  width:auto;
+  border:1px solid #ccc;
+  font:16px/26px Georgia, Garamond, Serif;
+  background-color: rgb(249, 241, 226);
+  overflow:auto;
+}
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 90%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
